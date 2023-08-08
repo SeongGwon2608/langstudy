@@ -10,6 +10,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.sgchoi.languagestudy.level1.*
 import com.sgchoi.languagestudy.ui.theme.LanguageStudyTheme
 
 class MainActivity : ComponentActivity() {
@@ -22,7 +23,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Android")
+                    PrintResult(result = littleString("3141592", "271").toString())
                 }
             }
         }
@@ -30,9 +31,9 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
+fun PrintResult(result: String, modifier: Modifier = Modifier) {
     Text(
-        text = "Hello $name!",
+        text = result,
         modifier = modifier
     )
 }
@@ -41,6 +42,6 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     LanguageStudyTheme {
-        Greeting("Android")
+        PrintResult("Android")
     }
 }
