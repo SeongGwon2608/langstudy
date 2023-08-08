@@ -23,7 +23,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    PrintResult(result = littleString("3141592", "271").toString())
+                    PrintResult(result = splitString("banana").toString())
                 }
             }
         }
