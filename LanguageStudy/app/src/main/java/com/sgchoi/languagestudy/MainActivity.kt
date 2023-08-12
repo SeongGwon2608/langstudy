@@ -24,7 +24,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    PrintResult(result = maxMin("1 2 3 4").toString())
+                    PrintResult(result = jadenCaseString("3people unFollowed me   ").toString())
                 }
             }
         }
