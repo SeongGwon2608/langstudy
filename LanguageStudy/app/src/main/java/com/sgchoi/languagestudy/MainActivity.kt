@@ -24,7 +24,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    PrintResult(result = fibonacci(3).toString())
+                    PrintResult(result = carpet(10, 2).toString())
                 }
             }
         }
