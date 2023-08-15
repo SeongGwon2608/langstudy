@@ -24,7 +24,8 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    PrintResult(result = carpet(10, 2).toString())
+                    var intArray: IntArray = intArrayOf(1, 3, 2, 5, 4, 5, 2, 3)
+                    PrintResult(result = orangeSelect(6, intArray).toString())
                 }
             }
         }
