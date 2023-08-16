@@ -25,7 +25,7 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     var intArray: IntArray = intArrayOf(1, 3, 2, 5, 4, 5, 2, 3)
-                    PrintResult(result = orangeSelect(6, intArray).toString())
+                    PrintResult(result = spinBracket("[](){}").toString())
                 }
             }
         }
