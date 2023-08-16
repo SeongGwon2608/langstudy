@@ -24,8 +24,10 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    var intArray: IntArray = intArrayOf(1, 3, 2, 5, 4, 5, 2, 3)
-                    PrintResult(result = spinBracket("[](){}").toString())
+                    var stringArray: Array<String> = arrayOf("banana", "apple", "rice", "pork", "pot")
+                    var stringArray2: Array<String> = arrayOf("chicken", "apple", "apple", "banana", "rice", "apple", "pork", "banana", "pork", "rice", "pot", "banana", "apple", "banana")
+                    var intArray: IntArray = intArrayOf(3,2,2,2,1)
+                    PrintResult(result = discountDay(want = stringArray, number = intArray, discount = stringArray2).toString())
                 }
             }
         }

@@ -6,7 +6,7 @@ import java.util.Stack
  * Programmers Coding Test
  * 문제명 : 괄호 회전하기
  * 난이도 : Level 2
- * 주의사항 :
+ * 주의사항 : {{{ 와 같이 닫는 부분이 한번도 없는 경우도 생각하여 예외처리
  */
 fun spinBracket (s: String): Int {
     var answer: Int = 0
@@ -22,7 +22,6 @@ fun spinBracket (s: String): Int {
             answer += checkBracket(cpString)
         }
     }
-
 
     return answer
 }
